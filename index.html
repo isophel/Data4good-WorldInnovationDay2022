@@ -125,6 +125,16 @@
           <p data-aos="fade-up" data-aos-delay="100">
             <h1>View our Findings</h1></p>
             <div id="adobe-dc-view" style="height: 360px; width: 500px;"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "c660ea4e2afa4e30a3544b8ece057f82", divId: "adobe-dc-view"});
+		adobeDCView.previewFile({
+			content:{location: {url: "https://ex-plre.com/wp-content/uploads/2022/05/data4good.pdf"}},
+			metaData:{fileName: "data4good.pdf"}
+		}, {embedMode: "SIZED_CONTAINER"});
+	});
+</script>
           
         </div>
        
@@ -291,20 +301,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script type="text/javascript">
-  document.addEventListener("adobe_dc_view_sdk.ready", function(){
-    var adobeDCView = new AdobeDC.View({clientId: "c660ea4e2afa4e30a3544b8ece057f82", divId: "adobe-dc-view"});
-    adobeDCView.previewFile({
-      content:{ location:
-        { url: "https://ex-plre.com/wp-content/uploads/2022/05/data4good.pdf"}},
-      metaData:{fileName: "Bodea Brochure.pdf"}
-    },
-    {
-      embedMode: "SIZED_CONTAINER"
-    });
-  });
-</script>
-
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
